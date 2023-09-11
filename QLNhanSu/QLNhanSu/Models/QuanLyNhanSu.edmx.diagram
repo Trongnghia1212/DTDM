@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="64d9b46a7b4b492cb3bfa4f102299673" Name="Diagram1">
+        <EntityTypeShape EntityType="NhanSuModel.BangLuong" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhanSuModel.BaoHiem" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhanSuModel.BoPhann" Width="1.5" PointX="0.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhanSuModel.ChucVu" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhanSuModel.HopDong" Width="1.5" PointX="0.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhanSuModel.NguoiDung" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhanSuModel.NhanVien" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NhanSuModel.Phong" Width="1.5" PointX="0.75" PointY="12" IsExpanded="true" />
+        <AssociationConnector Association="NhanSuModel.FK_BangLuong_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="NhanSuModel.FK_BaoHiem_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="NhanSuModel.FK_NhanVien_BoPhann" ManuallyRouted="false" />
+        <AssociationConnector Association="NhanSuModel.FK_NhanVien_ChucVu" ManuallyRouted="false" />
+        <AssociationConnector Association="NhanSuModel.FK_NhanVien_HopDong" ManuallyRouted="false" />
+        <AssociationConnector Association="NhanSuModel.FK_NhanVien_Phong" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="NhanSuModel.sysdiagram" Width="1.5" PointX="5.375" PointY="6.75" />
+        <EntityTypeShape EntityType="NhanSuModel.User" Width="1.5" PointX="7.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

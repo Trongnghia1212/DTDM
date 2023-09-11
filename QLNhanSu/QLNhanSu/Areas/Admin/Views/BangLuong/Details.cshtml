@@ -1,0 +1,50 @@
+﻿@model QLNhanSu.Models.BangLuong
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Chi Tiết</h2>
+
+<div>
+    <h4>Bảng Lương</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SoNgayCong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoNgayCong)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Luong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Luong)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ThucLinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ThucLinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NhanVien.TenNV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NhanVien.TenNV)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Trở Về", "Index")
+</p>

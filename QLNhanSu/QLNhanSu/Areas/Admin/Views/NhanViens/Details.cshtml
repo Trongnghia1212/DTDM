@@ -1,0 +1,123 @@
+﻿@model QLNhanSu.Models.NhanVien
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Chi Tết</h2>
+
+<div>
+    <h4>Nhân Viên</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TenNV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenNV)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GioiTinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GioiTinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NgaySinh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgaySinh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiaChi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiaChi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SDT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SDT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CMT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CMT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HSL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HSL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BangLuong.MaNV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BangLuong.MaNV)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BoPhann.TenBoPhan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BoPhann.TenBoPhan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChucVu.TenCV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChucVu.TenCV)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HopDong.TenHD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HopDong.TenHD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phong.TenPhong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phong.TenPhong)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Sửa", "Edit", new { id = Model.MaNV }) |
+    @Html.ActionLink("Trở về", "Index")
+</p>

@@ -1,0 +1,39 @@
+﻿@model QLNhanSu.Models.BangLuong
+@{
+    ViewBag.Title = "GetLuongById";
+    Layout = "~/Views/Shared/_NhanVien.cshtml";
+}
+
+<h2>Lương của nhân viên :</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SoNgayCong)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Luong)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ThucLinh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NhanVien.TenNV)
+        </th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>
+            @Html.DisplayFor(model => model.SoNgayCong)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.Luong)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.ThucLinh)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.NhanVien.TenNV)
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,55 @@
+﻿@model QLNhanSu.Models.NhanVien
+@{
+    Layout =null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Nhân Sự | Danh Mục</title>
+    <link href="~/Assets/Admin/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Assets/Admin/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <!-- Toastr style -->
+    <link href="~/Assets/Admin/css/plugins/toastr/toastr.min.css" rel="stylesheet">
+    <!-- Gritter -->
+    <link href="~/Assets/Admin/js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+    <link href="~/Assets/Admin/css/animate.css" rel="stylesheet">
+    <link href="~/Assets/Admin/css/style.css" rel="stylesheet">
+</head>
+<body class="gray-bg">
+    <div class="loginColumns animated fadeInDown">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="font-bold">Quản Lý Nhân Sự</h2>
+                <p>
+                    Hệ Thống Dành Cho Nhân Viên
+                </p>
+            </div>
+            <div class="col-md-6">
+                <div class="ibox-content">
+                    @Html.ValidationSummary(false)
+                    @using (Html.BeginForm())
+                    {
+                        <div class="form-group">
+                            @* <input type="email" class="form-control" placeholder="Username" required="">*@
+                            @Html.TextBoxFor(x =>x.MaNV, htmlAttributes: new { @class = "form-control", placeholder = "TaiKhoan" })
+                        </div>
+                        <div class="form-group">
+                            @*<input type="password" class="form-control" placeholder="Password" required="">*@
+                            @Html.PasswordFor(x => x.SDT, htmlAttributes: new { @class = "form-control", placeholder = "MatKhau" })
+                        </div>
+                        <button type="submit" class="btn btn-primary block full-width m-b">Đăng Nhập</button>
+                    }
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr />
+    </div>
+</body>
+
+</html>
+
